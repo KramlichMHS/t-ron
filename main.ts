@@ -31,6 +31,11 @@ controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.P
         p1direction = 2
     }
 })
+function bluex () {
+    if (true) {
+    	
+    }
+}
 controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
     if (!(p1direction == 2)) {
         p1direction = 0
@@ -323,6 +328,8 @@ Blue_Player.setPosition(10, 60)
 Red_Player.setPosition(150, 60)
 p1direction = 2
 p2direction = 0
+let blue_trail_x: number[] = []
+let blue_trail_y: number[] = []
 game.onUpdateInterval(25, function () {
     x = Blue_Player.x
     y = Blue_Player.y
